@@ -30,8 +30,8 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/60 to-slate-950/95"></div>
       </div>
 
-      {/* Content - Added padding top to clear fixed navbar */}
-      <div className="relative z-10 text-center px-4 max-w-6xl pt-32 md:pt-40">
+      {/* Content - Increased padding top even more to clear fixed navbar and avoid overlapping */}
+      <div className="relative z-10 text-center px-4 max-w-6xl pt-48 md:pt-72">
         <div className="mb-14 flex justify-center opacity-0 animate-fade-in-up">
            <div className="relative group">
               {/* Dynamic Glow */}
