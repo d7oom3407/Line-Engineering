@@ -1,0 +1,7 @@
+{
+  "name": "Line Engineering Consultancy",
+  "description": "A modern, high-performance website for Line Engineering Consultancy, featuring integrated services, project management, and a sleek Arabic-first user interface.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
