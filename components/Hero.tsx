@@ -30,14 +30,14 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/60 to-slate-950/95"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl">
+      {/* Content - Added padding top to clear fixed navbar */}
+      <div className="relative z-10 text-center px-4 max-w-6xl pt-32 md:pt-40">
         <div className="mb-14 flex justify-center opacity-0 animate-fade-in-up">
            <div className="relative group">
               {/* Dynamic Glow */}
-              <div className="absolute -inset-16 bg-sky-500/20 blur-[100px] rounded-full mix-blend-screen animate-pulse"></div>
-              <div className="relative w-40 h-40 md:w-64 md:h-64 transition-all duration-1000 group-hover:scale-105 drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]">
-                <Logo color="#ffffff" />
+              <div className="absolute -inset-20 bg-sky-500/20 blur-[120px] rounded-full mix-blend-screen animate-pulse"></div>
+              <div className="relative w-64 h-64 md:w-96 md:h-96 transition-all duration-1000 group-hover:scale-105 drop-shadow-[0_0_50px_rgba(255,255,255,0.3)]">
+                <Logo />
               </div>
            </div>
         </div>

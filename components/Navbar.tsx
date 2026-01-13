@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-1' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
@@ -45,12 +45,9 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
               onClick={(e) => handleScroll(e, 'home')}
               className="group flex flex-col items-center"
             >
-               <div className="h-12 w-12 md:h-16 md:w-16 transition-transform duration-500 group-hover:scale-110">
-                  <Logo color={scrolled ? '#0f172a' : '#ffffff'} />
+               <div className="h-16 w-16 md:h-24 md:w-24 transition-transform duration-500 group-hover:scale-110">
+                  <Logo inverted={scrolled} />
                </div>
-               <span className={`text-[8px] md:text-[10px] font-black tracking-[0.2em] mt-1 uppercase transition-colors duration-500 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-                 Line Consultancy
-               </span>
             </a>
           </div>
 

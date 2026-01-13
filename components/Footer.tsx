@@ -29,13 +29,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20 text-right">
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-1 flex flex-col items-start">
-            <div className="mb-8 flex flex-col items-center">
-              <div className="w-32 h-32 transition-transform hover:scale-110 duration-500 drop-shadow-lg">
-                <Logo color="#ffffff" />
+            <div className="mb-8 flex flex-col items-center w-full">
+              <div className="w-48 h-48 md:w-56 md:h-56 transition-transform hover:scale-110 duration-500 drop-shadow-lg">
+                <Logo />
               </div>
-              <span className="text-xs font-black tracking-[0.3em] uppercase mt-2 text-sky-400">
-                Line Consultancy
-              </span>
             </div>
             <p className="text-slate-400 text-lg leading-relaxed font-medium">
               نحن مكتب لاين للاستشارات الهندسية، نقدم خبراتنا لتطوير البيئة العمرانية في المملكة عبر حلول هندسية مبتكرة ومستدامة تتماشى مع رؤية 2030.
